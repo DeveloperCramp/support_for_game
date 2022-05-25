@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace Db.Models
+namespace WebApp.Models
 {
-    public class Admin
+    public class Operator
     {
         public Guid Id { get; set; }
         public string Mail { get; set; }
