@@ -3,6 +3,7 @@ using Microsoft.Extensions.Logging;
 using System.Diagnostics;
 using WebApp.Models;
 
+
 namespace WebApp.Controllers
 {
     public class HomeController : Controller
@@ -16,7 +17,7 @@ namespace WebApp.Controllers
 
         public IActionResult Index()
         {
-            return RedirectToAction(nameof(AuthorizationController.Index), "Authorization");
+            return RedirectToAction(nameof(AuthorizationController.Login), "Authorization");
         }
 
         public IActionResult Privacy()
