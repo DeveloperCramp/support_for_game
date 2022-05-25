@@ -1,14 +1,19 @@
 ﻿using System;
 
-namespace WebApp.Models
+namespace Db.Models
 {
     public class Message
     {
         public Guid Id { get; set; }
         public Player Player { get; set; }
-        public Operator Operator { get; set; }
-        public DateTime CreationTime { get; set; }
+        public Admin Admin { get; set; }
+        public DateTime CreateDateTime { get; set; }
         public bool IsRead { get; set; }
         public string Content { get; set; }
+
+        public Message()
+        {
+            CreateDateTime = DateTime.Now;
+        }
     }
 }

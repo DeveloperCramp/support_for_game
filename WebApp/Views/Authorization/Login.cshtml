@@ -1,4 +1,4 @@
-﻿@model OperatorViewModel
+﻿@model AdminViewModel
 
 <form method="post">
     <div class="row">
@@ -8,7 +8,6 @@
             </div>
             <div>
                 <p>
-                    <div class="text-danger font-weight-bold" asp-validation-summary="ModelOnly"></div>
                     <div>
                         <label asp-for="Mail">Логин:</label><br />
                         <input asp-for="Mail" size="30" placeholder="Qwerty12345" /><br />
@@ -21,14 +20,16 @@
                     <div>
                         <label asp-for="Password">Пароль:</label><br />
                         <input asp-for="Password" type="password" size="30" placeholder="Пароль" /><br />
-                        <span style="color:lightcoral" asp-validation-for="Password" /><br />
+                        <span style="color:lightcoral" asp-validation-for="Password" />
                     </div>
                 </p>
+                <div class="text-danger font-weight-bold" asp-validation-summary="ModelOnly"></div>
+                </>
             </div>
             <p>
                 <div>
                     <p>
-                        <button class="btn btn-dark w-25" type="submit" asp-controller="Operator" asp-action="Login">Войти</button>
+                        <button class="btn btn-dark w-25" type="submit" asp-controller="Authorization" asp-action="Login">Войти</button>
                     </p>
                 </div>
             </p>
