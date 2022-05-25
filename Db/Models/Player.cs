@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WebApp.Models
+namespace Db.Models
 {
     public class Player
     {
