@@ -10,6 +10,6 @@ namespace Db
         Task AddAsync(Player player);
         Task<List<Player>> GetAllAsync();
         Task<Player> TryGetByIdAsync(Guid id);
-        Task<Player> TryGetByNickNameAsync(Player player);
+        Task<Player> TryGetByNicknameAsync(Player player);
     }
 }

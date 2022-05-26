@@ -28,7 +28,7 @@ namespace API.Controllers
                 return BadRequest();
             }
             var dbModel = mapper.Map<Db.Models.Player>(player);
-            var result = await playerDbStorage.TryGetByNickNameAsync(dbModel);
+            var result = await playerDbStorage.TryGetByNicknameAsync(dbModel);
             if (result != null && result.Nickname == player.Nickname)
             {
                 return BadRequest();
