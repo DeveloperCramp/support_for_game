@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp", "WebApp\WebApp.csproj", "{039C91FC-A451-4AF5-AB8E-E386C3A80755}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Megame_support.Web", "WebApp\Megame_support.Web.csproj", "{039C91FC-A451-4AF5-AB8E-E386C3A80755}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Db", "Db\Db.csproj", "{34EB185F-3220-4CD3-BFB6-DDB647D9E6F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Megame_support.Db", "Db\Megame_support.Db.csproj", "{34EB185F-3220-4CD3-BFB6-DDB647D9E6F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{039DEE7E-10B2-4A4F-B454-3054012E2BB8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Megame_support.API", "API\Megame_support.API.csproj", "{039DEE7E-10B2-4A4F-B454-3054012E2BB8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
