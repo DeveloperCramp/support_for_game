@@ -25,7 +25,7 @@ namespace Db
             return await databaseContext.Players.FirstOrDefaultAsync(p => p.Id == id);
         }
 
-        public async Task<Player> TryGetByNickNameAsync(Player player)
+        public async Task<Player> TryGetByNicknameAsync(Player player)
         {
             return await databaseContext.Players.FirstOrDefaultAsync(p => p.Nickname == player.Nickname);
         }
