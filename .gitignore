@@ -361,9 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
 /Unity_Client/Temp
-<<<<<<< HEAD
-/Unity_Client/Library
-=======
 /Unity_Client/Library/PackageCache
->>>>>>> parent of 598b73b (add git ignore)
