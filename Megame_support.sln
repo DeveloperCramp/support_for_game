@@ -10,6 +10,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Megame_support.API", "API\Megame_support.API.csproj", "{039DEE7E-10B2-4A4F-B454-3054012E2BB8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Unity_Client\Assembly-CSharp.csproj", "{39AB0C2E-3A72-220D-C918-848998D211BB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{039DEE7E-10B2-4A4F-B454-3054012E2BB8} = {039DEE7E-10B2-4A4F-B454-3054012E2BB8}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
