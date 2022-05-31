@@ -363,3 +363,4 @@ MigrationBackup/
 FodyWeavers.xsd
 /Unity_Client/Temp
 /Unity_Client/Library
+/Unity_Client/[Ll]ibrary/
