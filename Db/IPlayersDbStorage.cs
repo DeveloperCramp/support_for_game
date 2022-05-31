@@ -11,5 +11,6 @@ namespace Db
         Task<List<Player>> GetAllAsync();
         Task<Player> TryGetByIdAsync(Guid id);
         Task<Player> TryGetByNicknameAsync(Player player);
+        Task<Player> TryGetByTokenAsync(string token);
     }
 }

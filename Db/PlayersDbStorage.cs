@@ -30,6 +30,11 @@ namespace Db
             return await databaseContext.Players.FirstOrDefaultAsync(p => p.Nickname == player.Nickname);
         }
 
+        public async Task<Player> TryGetByTokenAsync(string token)
+        {
+            return await databaseContext.Players.FirstOrDefaultAsync(t => t.Token == token);
+        }
+
         public async Task AddAsync(Player player)
         {
             await databaseContext.Players.AddAsync(player);

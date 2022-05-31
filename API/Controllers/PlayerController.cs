@@ -27,14 +27,29 @@ namespace API.Controllers
             {
                 return BadRequest();
             }
+
             var dbModel = mapper.Map<Db.Models.Player>(player);
             var result = await playerDbStorage.TryGetByNicknameAsync(dbModel);
+
             if (result != null && result.Nickname == player.Nickname)
             {
                 return BadRequest();
             }
+
             await playerDbStorage.AddAsync(dbModel);
             return Ok(dbModel);
+        }
+
+        // Get api/player
+        public async Task<ActionResult<Player>> Get(string token)
+        {
+            if (token == null)
+            {
+                return BadRequest();
+            }
+
+            var result =  playerDbStorage.TryGetByTokenAsync(token).Result;
+            return Ok(result);
         }
     }
 }

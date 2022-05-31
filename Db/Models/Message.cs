@@ -9,7 +9,7 @@ namespace Db.Models
         public Admin Admin { get; set; }
         public DateTime CreateDateTime { get; set; }
         public bool IsRead { get; set; }
-        public string Content { get; set; }
+        public string TextContent { get; set; }
 
         public Message()
         {
