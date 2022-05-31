@@ -5,6 +5,6 @@ using UnityEngine;
 [Serializable]
 public class NewPlayerStruct : MonoBehaviour
 {
-    public string Nickname;
-    public string Token;
+    public string nickname;
+    public string token;
 }
