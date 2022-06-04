@@ -17,11 +17,6 @@ namespace WebApp.Controllers
 
         public IActionResult Index()
         {
-            return RedirectToAction(nameof(AuthorizationController.Login), "Authorization");
-        }
-
-        public IActionResult Privacy()
-        {
             return View();
         }
 
