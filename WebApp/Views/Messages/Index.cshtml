@@ -1,4 +1,9 @@
-﻿@model List<MessageViewModel>
+﻿<div class="container">
+@await Html.PartialAsync("AdminControlPanelLeftMenu")
+</div>
+
+
+@model List<MessageViewModel>
 
 @foreach (var message in Model)
 {
