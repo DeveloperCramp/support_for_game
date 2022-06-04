@@ -1686,6 +1686,7 @@
     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\cmp\OobCertHash.cs" />
     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\AlertLevel.cs" />
     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\digests\WhirlpoolDigest.cs" />
+    <Compile Include="Assets\Scripts\Send_Message.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Best HTTP (Pro)\license.txt" />
