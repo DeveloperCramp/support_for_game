@@ -20,14 +20,19 @@ namespace Db
             return await databaseContext.Players.ToListAsync();
         }
 
-        public async Task<Player> TryGetByIdAsync(Guid id)
+        public async Task<Player> TryGetByIdAsync(Player player)
         {
-            return await databaseContext.Players.FirstOrDefaultAsync(p => p.Id == id);
+            return await databaseContext.Players.FirstOrDefaultAsync(p => p.Id == player.Id);
         }
 
         public async Task<Player> TryGetByNicknameAsync(Player player)
         {
             return await databaseContext.Players.FirstOrDefaultAsync(p => p.Nickname == player.Nickname);
+        }
+
+        public async Task<Player> TryGetByTokenAsync(Player player)
+        {
+            return await databaseContext.Players.FirstOrDefaultAsync(t => t.Token == player.Token);
         }
 
         public async Task AddAsync(Player player)
