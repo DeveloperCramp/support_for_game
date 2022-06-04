@@ -23,18 +23,14 @@ namespace API.Controllers
         [HttpPost]
         public async Task<ActionResult<Player>> Post(Player player)
         {
-            if (player == null)
-            {
-                return BadRequest();
-            }
             var dbModel = mapper.Map<Db.Models.Player>(player);
-            var result = await playerDbStorage.TryGetByNicknameAsync(dbModel);
-            if (result != null && result.Nickname == player.Nickname)
+            var result = await playerDbStorage.TryGetByTokenAsync(dbModel);
+            if (result == null)
             {
-                return BadRequest();
+                await playerDbStorage.AddAsync(dbModel);
+                return Ok(dbModel);
             }
-            await playerDbStorage.AddAsync(dbModel);
-            return Ok(dbModel);
+            return BadRequest();
         }
     }
 }
