@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Unity_Cl
 		{039DEE7E-10B2-4A4F-B454-3054012E2BB8} = {039DEE7E-10B2-4A4F-B454-3054012E2BB8}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Megame_support.WebSocket", "WebSocket\Megame_support.WebSocket.csproj", "{2FEE421F-7B0B-4D3E-8935-79D9ECC077B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +38,10 @@ Global
 		{39AB0C2E-3A72-220D-C918-848998D211BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39AB0C2E-3A72-220D-C918-848998D211BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39AB0C2E-3A72-220D-C918-848998D211BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FEE421F-7B0B-4D3E-8935-79D9ECC077B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FEE421F-7B0B-4D3E-8935-79D9ECC077B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FEE421F-7B0B-4D3E-8935-79D9ECC077B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FEE421F-7B0B-4D3E-8935-79D9ECC077B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
