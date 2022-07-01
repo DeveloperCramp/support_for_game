@@ -5,5 +5,3 @@ In development:
 - Unity client with user registration and unique token by hardware ID
 
 - API
-
-- MySQL
