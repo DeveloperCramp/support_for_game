@@ -362,5 +362,5 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 
-/Unity_Client/Temp
-/Unity_Client/Library/PackageCache
+Unity_Client/Temp/
+Unity_Client/Library/
